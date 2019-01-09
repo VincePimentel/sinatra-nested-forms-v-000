@@ -19,19 +19,19 @@
   <% 2.times do |i| %>
     <% i += 1 %>
 
-    <h2><%= "Ship #{}#{i} Information" %></h2>
+    <h2><%= "Ship ##{i} Information" %></h2>
     <p>
-      <label for="ship_name_<%= i %>">Name:</label>
+      <label for="ship_name_<%= i %>">Name: </label>
       <input type="text" id="ship_name_<%= i %>" name="pirate[ships][][name]">
     </p>
 
     <p>
-      <label for="ship_type_<%= i %>">Type:</label>
+      <label for="ship_type_<%= i %>">Type: </label>
       <input type="text" id="ship_type_<%= i %>" name="pirate[ships][][type]">
     </p>
 
     <p>
-      <label for="ship_booty_<%= i %>">Booty:</label>
+      <label for="ship_booty_<%= i %>">Booty: </label>
       <input type="text" id="ship_booty_<%= i %>" name="pirate[ships][][booty]">
     </p>
   <% end %>
