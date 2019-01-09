@@ -20,23 +20,23 @@
     <h2><%= "Ship #{i + 1} Information" %></h2>
     <p>
       <label for="ship_name_<%= "#{i + 1}".to_s %>">Name:</label>
-      <input type="text" id="ship_name_1" name="pirate[ships][][name]">
+      <input type="text" id="ship_name_<%= "#{i + 1}".to_s %>" name="pirate[ships][][name]">
     </p>
 
     <p>
-      <label for="ship_type_1">Type:</label>
-      <input type="text" id="ship_type_1" name="pirate[ships][][type]">
+      <label for="ship_type_<%= "#{i + 1}".to_s %>">Type:</label>
+      <input type="text" id="ship_type_<%= "#{i + 1}".to_s %>" name="pirate[ships][][type]">
     </p>
 
     <p>
-      <label for="ship_booty_1">Booty:</label>
-      <input type="text" id="ship_booty_1" name="pirate[ships][][booty]">
+      <label for="ship_booty_<%= "#{i + 1}".to_s %>">Booty:</label>
+      <input type="text" id="ship_booty_<%= "#{i + 1}".to_s %>" name="pirate[ships][][booty]">
     </p>
   <% end %>
 
-  
+<!-- 
 
-  
+
 
   <h2>Ship #2 Information</h2>
 
@@ -53,7 +53,7 @@
   <p>
     <label for="ship_booty_2">Booty:</label>
     <input type="text" id="ship_booty_2" name="pirate[ships][][booty]">
-  </p>
+  </p> -->
 
   <input type="submit" name="" value="Submit">
 </form>
