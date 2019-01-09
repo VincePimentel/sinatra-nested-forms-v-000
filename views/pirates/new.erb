@@ -17,24 +17,25 @@
   </p>
 
   <% 2.times do |i| %>
-    <h2><%= "Ship #{i + 1} Information" %></h2>
+    <% i += 1 %>
+    <h2><%= "Ship #{i} Information" %></h2>
     <p>
-      <label for="ship_name_<%= "#{i + 1}".to_s %>">Name:</label>
-      <input type="text" id="ship_name_<%= "#{i + 1}".to_s %>" name="pirate[ships][][name]">
+      <label for="ship_name_<%= "#{i}".to_s %>">Name:</label>
+      <input type="text" id="ship_name_<%= "#{i}".to_s %>" name="pirate[ships][][name]">
     </p>
 
     <p>
-      <label for="ship_type_<%= "#{i + 1}".to_s %>">Type:</label>
-      <input type="text" id="ship_type_<%= "#{i + 1}".to_s %>" name="pirate[ships][][type]">
+      <label for="ship_type_<%= "#{i}".to_s %>">Type:</label>
+      <input type="text" id="ship_type_<%= "#{i}".to_s %>" name="pirate[ships][][type]">
     </p>
 
     <p>
-      <label for="ship_booty_<%= "#{i + 1}".to_s %>">Booty:</label>
-      <input type="text" id="ship_booty_<%= "#{i + 1}".to_s %>" name="pirate[ships][][booty]">
+      <label for="ship_booty_<%= "#{i}".to_s %>">Booty:</label>
+      <input type="text" id="ship_booty_<%= "#{i}".to_s %>" name="pirate[ships][][booty]">
     </p>
   <% end %>
 
-<!-- 
+<!--
 
 
 
