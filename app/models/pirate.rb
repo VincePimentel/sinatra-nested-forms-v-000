@@ -4,9 +4,9 @@ class Pirate
   PIRATES = Array.new
 
   def initialize(params)
-    @name = params[:name]
-    @weight = params[:weight]
-    @height = params[:height]
+    @name = params["name"]
+    @weight = params["weight"]
+    @height = params["height"]
     PIRATES << self
   end
 
