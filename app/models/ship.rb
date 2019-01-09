@@ -15,6 +15,6 @@ class Ship
   end
 
   def self.clear
-    SHIPS = Array.new
+    SHIPS = []]
   end
 end
