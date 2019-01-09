@@ -8,4 +8,8 @@ class Ship
     @type = params[:type]
     @booty = params[:booty]
   end
+
+  def self.all
+    SHIPS
+  end
 end
