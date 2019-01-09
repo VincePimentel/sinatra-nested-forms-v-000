@@ -16,22 +16,27 @@
     <input type="text" id="pirate[height]" name="pirate[height]">
   </p>
 
-  <h2>Ship #1 Information</h2>
+  <% 2.times do |i| %>
+    <h2><%= "Ship #{i + 1} Information" %></h2>
+    <p>
+      <label for="ship_name_<%= "#{i + 1}".to_s %>">Name:</label>
+      <input type="text" id="ship_name_1" name="pirate[ships][][name]">
+    </p>
 
-  <p>
-    <label for="ship_name_1">Name:</label>
-    <input type="text" id="ship_name_1" name="pirate[ships][][name]">
-  </p>
+    <p>
+      <label for="ship_type_1">Type:</label>
+      <input type="text" id="ship_type_1" name="pirate[ships][][type]">
+    </p>
 
-  <p>
-    <label for="ship_type_1">Type:</label>
-    <input type="text" id="ship_type_1" name="pirate[ships][][type]">
-  </p>
+    <p>
+      <label for="ship_booty_1">Booty:</label>
+      <input type="text" id="ship_booty_1" name="pirate[ships][][booty]">
+    </p>
+  <% end %>
 
-  <p>
-    <label for="ship_booty_1">Booty:</label>
-    <input type="text" id="ship_booty_1" name="pirate[ships][][booty]">
-  </p>
+  
+
+  
 
   <h2>Ship #2 Information</h2>
 
